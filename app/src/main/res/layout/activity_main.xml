@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/txtWeb"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Web Url:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/edtWeb"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textUri"
+        android:text="https://www.google.com"
+        android:backgroundTint="#808080"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toEndOf="@id/txtWeb"
+        app:layout_constraintEnd_toStartOf="@id/btnBrowse"
+        app:layout_constraintTop_toTopOf="@id/txtWeb"
+        app:layout_constraintBottom_toBottomOf="@id/txtWeb"/>
+
+    <Button
+        android:id="@+id/btnBrowse"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:text="Browse"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtWeb"
+        app:layout_constraintBottom_toBottomOf="@id/txtWeb"/>
+
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Phone No.:"
+        android:textSize="18sp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtWeb"/>
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="9999999999"
+        android:backgroundTint="#808080"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toEndOf="@id/txtPhone"
+        app:layout_constraintEnd_toStartOf="@id/btnCall"
+        app:layout_constraintTop_toTopOf="@id/txtPhone"
+        app:layout_constraintBottom_toBottomOf="@id/txtPhone"/>
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:text="Call"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtPhone"
+        app:layout_constraintBottom_toBottomOf="@id/txtPhone"/>
+
+    <TextView
+        android:id="@+id/txtCallLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call Log:"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPhone"/>
+
+    <Button
+        android:id="@+id/btnCallLog"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:text="Call Log"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtCallLog"/>
+
+    <TextView
+        android:id="@+id/txtGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery:"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCallLog"/>
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:text="Gallery"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtGallery"/>
+
+    <TextView
+        android:id="@+id/txtCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera:"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtGallery"/>
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:text="Camera"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtCamera"/>
+
+    <TextView
+        android:id="@+id/txtAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm:"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCamera"/>
+
+    <Button
+        android:id="@+id/btnAlarm"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:text="Alarm"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtAlarm"/>
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login:"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAlarm"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtLogin"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
