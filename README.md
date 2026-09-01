@@ -14,7 +14,7 @@ Create an Android application which demonstrates implicit and explicit Intent.
 
 ### 🎥 Demo
 
-https://github.com/imnihal28/24012011175_MAD_Practical3/issues/1#issue-5311063016
+https://github.com/user-attachments/assets/b6b26a51-c03d-41a2-8d00-3620a9bb6885
 </td>
 
 <td width="50%" valign="top">
